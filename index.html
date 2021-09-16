@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+	
+	<!--JS-->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<title>Clocks</title>
+</head>
+
+<body onload = "showTimeDigital(); showTimeAnalog(); typeOfClock();">
+
+	<div id = "clockDisplay" class = "digital-clock" ></div>
+
+	<div class = "btn">
+		<input type="checkbox" id="accept" name="accept" value="yes" onchange = "typeOfClock();"></input>
+	</div> 
+
+	<div class = "analog-clock">
+		<div class = "outer-clock">
+			<div class="marking marking-one"></div>
+			<div class="marking marking-two"></div>
+			<div class="marking marking-three"></div>
+			<div class="marking marking-four"></div>
+			<div class="inner-clock">
+					<div class="clock-hand hour-hand"></div>
+					<div class="clock-hand min-hand"></div>
+					<div class="clock-hand second-hand"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
